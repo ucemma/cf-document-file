@@ -1,0 +1,11 @@
+runtime: php55
+api_version: 1
+env: flex
+handlers:
+- url: /view/(.*\.(php|js))$
+  script: view.php
+  login: required
+
+- url: /view-module-load
+  script: view-module-load.php
+  login: required
